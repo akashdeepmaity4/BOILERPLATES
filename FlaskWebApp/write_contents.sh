@@ -1,3 +1,12 @@
+echo github.com/akashdeepmaity4
+
+mkdir -p templates static/css static/js
+touch readme.md .gitignore app.py templates/index.html static/css/style.css static/js/main.js 
+
+echo directory structure created!
+
+echo writing the files ...
+
 cat << 'EOF' > app.py
 from flask import Flask, render_template, request, redirect, url_for
 
@@ -9,25 +18,6 @@ def main():
 
 
 
-
-
-
-'''
-
-DISCLAIMER: Your code goes here. 
-
-
-
-
-                    if __name__ == '__main__':
-                    app.run(debug=True)
-
-
-
-
-The above shown code block should be at the bottom of the file to prevent the app running half-way.
-
-'''
 
 
 
@@ -81,6 +71,14 @@ echo static/css/style.css created!
 cat << 'EOF' > .gitignore
 *.pyc
 __pycache__
+*.py[cod]
+*$py.class
+venv/
+.venv/
+.env
+.DS_Store
+.vscode/
+.idea/
 EOF
 
 echo .gitignore created!
