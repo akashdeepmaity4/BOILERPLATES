@@ -1,7 +1,7 @@
 echo github.com/akashdeepmaity4
 
 mkdir -p templates static/css static/js
-touch readme.md .gitignore app.py templates/index.html static/css/style.css static/js/main.js 
+touch readme.md .gitignore app.py templates/index.html static/css/style.css static/js/main.js requirements.txt
 
 echo directory structure created!
 
@@ -88,3 +88,7 @@ console.log("Hello World!");
 EOF
 
 echo static/js/main.js created!
+
+cat << 'EOF' > requirements.txt
+flask
+EOF
